@@ -1,34 +1,7 @@
+@import 'imports/variables';
+@import 'imports/header';
+
 @import url(futura/stylesheet.css);
-header {
-  height: 120px;
-  background: var(--basil-green);
-  position: relative;
-}
-header h1 {
-  background: url(img/basil.png) no-repeat;
-  font-family: FuturaStdLight, sans-serif;
-  font-weight: normal;
-  color: #fff;
-  font-size: 5rem;
-}
-header a.beta {
-  background: url("img/burst.svg") no-repeat;
-  color: #fff;
-  font-size: 1.5rem;
-  position: absolute;
-  top: -20px;
-  right: 10px;
-  width: 85px;
-  height: 85px;
-  line-height: 85px;
-  text-align: center;
-  text-transform: uppercase;
-  transform: rotate(20deg);
-  transition: all 1s ease;
-}
-header a.beta:hover {
-  transform: rotate(0deg) scale(1.2);
-}
 
 :root {
   --basil-green: #88a308;
@@ -53,7 +26,8 @@ header a.beta:hover {
 }
 
 body {
-  font: 100%/1.5 "Segoe UI", Candara, "Bitstream Vera Sans", "DejaVu Sans", "Bitstream Vera Sans", "Trebuchet MS", Verdana, "Verdana Ref", sans-serif;
+  font: 100%/1.5 'Segoe UI', Candara, 'Bitstream Vera Sans', 'DejaVu Sans',
+    'Bitstream Vera Sans', 'Trebuchet MS', Verdana, 'Verdana Ref', sans-serif;
   color: var(--dark-gray);
   max-width: var(--max-width);
   /* margin: 0 auto;
@@ -97,6 +71,7 @@ nav {
   padding: 0.5rem;
   display: flex;
   align-items: center;
+
   justify-content: space-between;
   flex-wrap: wrap;
 }
@@ -117,6 +92,7 @@ nav a {
   color: #fff;
   text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
   border-radius: 6px;
+
   min-width: 120px;
   display: inline-block;
 }
@@ -148,6 +124,7 @@ nav a {
 /* nav p {
   margin-right: auto;
 } */
+
 aside li {
   list-style: none;
 }
@@ -183,9 +160,12 @@ footer {
     margin: 0 auto;
     margin-top: 1.5rem;
     display: grid;
-    grid-template-areas: "header" "nav" "content" "footer";
+    grid-template-areas:
+      'header'
+      'nav'
+      'content'
+      'footer';
   }
-
   header {
     border-radius: 8px 8px 0px 0px;
     grid-area: header;
@@ -197,31 +177,24 @@ footer {
     transform: translate(-100px, -80px);
     background-position: top left;
   }
-
   nav {
     grid-area: nav;
   }
-
   .content {
     grid-area: content;
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     grid-column-gap: 1rem;
   }
-
   article {
     grid-column: span 3;
   }
-
   aside {
     grid-column: span 2;
     background: var(--light-green);
     box-shadow: -4px 0px 4px #ddd;
   }
-
   footer {
     grid-area: footer;
   }
 }
-
-/*# sourceMappingURL=styles.css.map */

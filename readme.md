@@ -1,5 +1,5 @@
 # Basilica!
-change
+
 ## Homework
 
 Examine the files in the `other/homework` of Flexbox repo folder. `index.html` is your starting point and `index-done.html` the goal. Your assignment is to 
@@ -880,6 +880,8 @@ Note the underscore in the file name. If you add an underscore to the start of t
 
 Note: SASS allows you to use JavaScript style comments - `//`. These comments do not get compiled into the css file. Traditional CSS comments ( `/* ... */` ) do.
 
+<!-- HERE -->
+
 Create another nested block for the nav:
 
 ```css
@@ -967,7 +969,7 @@ body {
 }
 ```
 
-Note: since SASS is a transpiler we can use SASS variables - `$beak-two` - for break points.
+Note: since SASS is a transpiler we can use SASS variables - `$break-two` - for break points.
 
 Perform similar actions for the header.
 

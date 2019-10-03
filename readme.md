@@ -981,6 +981,7 @@ header {
   position: relative;
   height: 120px;
   background: var(--basil-green);
+
   @media (min-width: $break-two) {
     border-radius: 8px 8px 0px 0px;
     grid-area: header;
@@ -992,12 +993,14 @@ header {
     font-weight: normal;
     color: #fff;
     font-size: 5rem;
+
     @media (min-width: $break-two) {
       padding-left: 240px;
       padding-top: 90px;
       transform: translate(-100px, -80px);
       background-position: top left;
     }
+    
   }
   ...
 }
@@ -1018,9 +1021,11 @@ nav {
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
+
   @media (min-width: $break-two) {
     grid-area: nav;
   }
+
   ...
 }
 ```
@@ -1189,7 +1194,7 @@ Try changing them in `_nav.scss`:
   }
 ```
 
-Note: switching branches at this point will delete styles.css from the css directory. Stop the processes running in the console before switching branches.
+<!-- Note: switching branches at this point will delete styles.css from the css directory. Stop the processes running in the console before switching branches. -->
 
 ## JavaScript
 
@@ -1237,7 +1242,6 @@ Add some additional variables - arrays:
 const randomNumber = require('random-number');
 
 const basilChef = ['mama', 'papa', 'baby'];
-const basilTexture = ['greasy', 'frozen', 'spicy'];
 
 function randomItem(array) {
   const randomIndex = randomNumber({

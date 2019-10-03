@@ -2,10 +2,7 @@
 
 ## Homework
 
-Examine the files in the `other/homework` of Flexbox repo folder. `index.html` is your starting point and `index-done.html` the goal. Your assignment is to 
-
-1. Edit `index.html` to it matches the goal. (There are some notes for you to follow [here](https://github.com/front-end-foundations/4-flex-menu#design-with-flexbox)).
-2. Use the JavaScript techniques outlined in the Flexbox repo to add dynamic content to the index page as shown [here](http://oit2.scps.nyu.edu/~devereld/midterm/). 
+Create separate popovers for each button in the navigations. The popovers should each have different messages.
 
 ## Reading
 

@@ -1,13 +1,24 @@
 header {
+  position: relative;
   height: 120px;
   background: var(--basil-green);
-  position: relative;
+  @media (min-width: $break-two) {
+    border-radius: 8px 8px 0px 0px;
+    grid-area: header;
+  }
+
   h1 {
     background: url(img/basil.png) no-repeat;
     font-family: FuturaStdLight, sans-serif;
     font-weight: normal;
     color: #fff;
     font-size: 5rem;
+    @media (min-width: $break-two) {
+      padding-left: 240px;
+      padding-top: 90px;
+      transform: translate(-100px, -80px);
+      background-position: top left;
+    }
   }
   a.beta {
     background: url('img/burst.svg') no-repeat;

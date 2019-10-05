@@ -1,0 +1,42 @@
+.betainfo {
+  max-width: 300px;
+  padding: 0 1rem 1rem 1rem;
+  background: #fff;
+  border: 2px solid var(--orange);
+  border-radius: $radius;
+  position: fixed;
+  z-index: 30;
+  top: 30%;
+  left: calc(50% - 150px);
+  // display: none;
+}
+
+.closer {
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  width: 1.5rem;
+  height: 1.5rem;
+  background: #fff;
+  color: var(--orange);
+  border: 2px solid #eabc5a;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 1.5rem;
+  cursor: pointer;
+}
+
+.shader {
+  position: fixed;
+  z-index: 20;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.75);
+  height: 100vh;
+  width: 100vw;
+  display: none;
+}
+
+.show {
+  display: block;
+}

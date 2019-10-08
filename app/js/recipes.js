@@ -22,8 +22,8 @@ var apiData = [
   },
 
   {
-    name: 'Pesto',
-    regions: ['Italy', 'France', 'Greece'],
+    name: 'Lasagna',
+    regions: ['Italy', 'Spain', 'Greece'],
     photo: 'pesto.jpg',
     description:
       'A sauce of crushed basil leaves, pine nuts, garlic, Parmesan cheese, and olive oil, typically served with pasta.',

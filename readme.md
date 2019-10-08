@@ -2135,7 +2135,117 @@ function destroyPopover() {
 
 ## Notes
 
-`<h2 itemprop="name"></h2>`
+Template literals allow embedded expressions. You can use multi-line strings and string interpolation features with them. They were called "template strings" in prior editions of the ES2015 specification.
+
+```js
+let recipe = `
+<figure>
+  <picture>
+    <img src="img/pesto.jpg" alt="Italian pesto" />
+  </picture>
+
+  <figcaption>
+    Classic, simple basil pesto recipe with fresh basil leaves, pine
+    nuts, garlic, Romano or Parmesan cheese, extra virgin olive oil, and
+    salt and pepper.
+  </figcaption>
+</figure>
+
+<h2 itemprop="name">Pesto</h2>
+
+<p itemprop="description">
+  A sauce of crushed basil leaves, pine nuts, garlic, Parmesan cheese,
+  and olive oil, typically served with pasta.
+</p>
+
+<h3>Directions</h3>
+
+<ol itemprop="recipeInstructions">
+  <li>
+    Combine the basil, garlic, and pine nuts in a food processor and
+    pulse until coarsely chopped. Add 1/2 cup of the oil and process
+    until fully incorporated and smooth. Season with salt and pepper.
+  </li>
+  <li>
+    If using immediately, add all the remaining oil and pulse until
+    smooth. Transfer the pesto to a large serving bowl and mix in the
+    cheese.
+  </li>
+  <li>
+    If freezing, transfer to an air-tight container and drizzle
+    remaining oil over the top. Freeze for up to 3 months. Thaw and stir
+    in cheese.
+  </li>
+</ol>
+
+<h3>Ingredients</h3>
+<ul>
+  <li itemprop="recipeIngredient">2 cups packed fresh basil leaves</li>
+  <li itemprop="recipeIngredient">2 cloves garlic</li>
+  <li itemprop="recipeIngredient">1/4 cup pine nuts</li>
+  <li itemprop="recipeIngredient">2/3 cup extra-virgin olive oil</li>
+  <li itemprop="recipeIngredient">
+    Kosher salt and freshly ground black pepper, to taste
+  </li>
+  <li itemprop="recipeIngredient">
+    1/2 cup freshly grated Pecorino cheese
+  </li>
+  <li itemprop="recipeIngredient">
+    1 <abbr title="Pounds">lb</abbr> plain pasta
+  </li>
+</ul>
+`;
+
+const article = document.querySelector('article');
+article.innerHTML = recipe;
+```
+
+## Expressions
+
+Any unit of code that can be evaluated to a value is an expression. Since expressions produce values, they can appear anywhere in a program where JavaScript expects a value.
+
+```js
+10 + 13
+'hello' + 'world'
+```
+
+## Statements
+
+A statement is an instruction to perform a specific action - creating a variable or a function, looping through an array of elements, and evaluating code based on a specific condition.
+
+```js
+var total = 0;
+
+function greet(message) {
+  console.log(message);
+}
+```
+
+```js
+let dirs = '';
+
+function createDirections() {
+  for (let i = 0; i < currRecipe.directions.length; i++) {
+    dirs += '<li>' + currRecipe.directions[i] + '</li>';
+  }
+}
+
+createDirections();
+```
+
+```js
+${currRecipe.directions.map(dir => {
+  `<li>${dir}</li>`;
+})}
+```
+
+```js
+${currRecipe.directions.map(dir => `<li>${dir}</li>`)}
+```
+
+```js
+${currRecipe.directions.map(dir => `<li>${dir}</li>`).join('')}
+```
 
 ONE
 

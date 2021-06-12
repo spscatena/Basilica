@@ -877,7 +877,9 @@ Examples [Bootstrap](https://getbootstrap.com) and its [SASS roots](https://gith
 
 Create `imports/_header.scss` and cut and paste the nested header material from `_styles.scss` into it. Import it to the main stylesheet with:
 
-`@import 'imports/header';`
+```css
+@import "imports/header";
+```
 
 Note the underscore in the file name. If you add an underscore to the start of the file name, Sass won’t compile it. So, if you don’t want `header.scss` to compile to `header.css`, name the file with an undercore `_header.scss` instead. Files used this way are called partials in Sass.
 
@@ -1028,6 +1030,22 @@ nav {
 ```
 
 Finally, create partials `_base.scss` and `_content.scss`.
+
+<!-- copied the font css into a new partial and changed the paths
+```
+@font-face {
+  font-family: "FuturaStdLight";
+  src: url("font/futurastd-light-webfont.eot");
+  src: url("font/futurastd-light-webfont.eot?#iefix")
+      format("embedded-opentype"),
+    url("font/futurastd-light-webfont.woff") format("woff"),
+    url("font/futurastd-light-webfont.ttf") format("truetype"),
+    url("font/futurastd-light-webfont.svg#FuturaStdLight") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+```
+ -->
 
 In `_base.scss`:
 

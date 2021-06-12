@@ -1,6 +1,8 @@
 @import url(futura/stylesheet.css);
+@import "imports/variables";
+
 * {
-  color: #0f0;
+  color: $green;
 }
 
 html {
@@ -25,7 +27,8 @@ html {
 }
 
 body {
-  font: 100%/1.5 "Segoe UI", Candara, "Bitstream Vera Sans", "DejaVu Sans", "Bitstream Vera Sans", "Trebuchet MS", Verdana, "Verdana Ref", sans-serif;
+  font: 100%/1.5 "Segoe UI", Candara, "Bitstream Vera Sans", "DejaVu Sans",
+    "Bitstream Vera Sans", "Trebuchet MS", Verdana, "Verdana Ref", sans-serif;
   color: var(--dark-gray);
   max-width: var(--max-width);
 }
@@ -106,6 +109,7 @@ header a.beta {
   line-height: 85px;
   text-align: center;
   text-transform: uppercase;
+
   transform: rotate(20deg);
   transition: all 1s ease;
 }
@@ -120,6 +124,7 @@ nav {
   padding: 0.5rem;
   display: flex;
   align-items: center;
+
   justify-content: space-between;
   flex-wrap: wrap;
 }
@@ -144,6 +149,7 @@ nav a {
   color: #fff;
   text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
   border-radius: 6px;
+
   min-width: 120px;
   display: inline-block;
 }
@@ -184,45 +190,40 @@ footer {
     margin: 0 auto;
     margin-top: 1.5rem;
     display: grid;
-    grid-template-areas: "header" "nav" "content" "footer";
+    grid-template-areas:
+      "header"
+      "nav"
+      "content"
+      "footer";
   }
-
   header {
     border-radius: 8px 8px 0px 0px;
     grid-area: header;
   }
-
   header h1 {
     padding-left: 240px;
     padding-top: 90px;
     transform: translate(-100px, -80px);
     background-position: top left;
   }
-
   nav {
     grid-area: nav;
   }
-
   .content {
     grid-area: content;
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     grid-column-gap: 1rem;
   }
-
   article {
     grid-column: span 3;
   }
-
   aside {
     grid-column: span 2;
     background: var(--light-green);
     box-shadow: -4px 0px 4px #ddd;
   }
-
   footer {
     grid-area: footer;
   }
 }
-
-/*# sourceMappingURL=styles.css.map */

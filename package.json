@@ -1,0 +1,26 @@
+{
+  "name": "basilica",
+  "version": "1.0.0",
+  "description": "## Homework",
+  "main": "index.js",
+  "devDependencies": {
+    "browser-sync": "^2.26.14",
+    "sass": "^1.34.1"
+  },
+  "scripts": {
+    "server": "browser-sync start --directory --server 'app' --files 'app'",
+    "sass": "sass  scss/styles.scss app/css/styles.css --watch --source-map",
+    "start": "npm run server & npm run sass"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/front-end-foundations/Basilica.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/front-end-foundations/Basilica/issues"
+  },
+  "homepage": "https://github.com/front-end-foundations/Basilica#readme"
+}

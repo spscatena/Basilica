@@ -17,11 +17,79 @@ html {
   padding: 0;
 }
 
+::selection {
+  background: var(--basil-green);
+  color: #fff;
+}
+
 body {
   font: 100%/1.5 'Segoe UI', Candara, 'Bitstream Vera Sans', 'DejaVu Sans',
     'Bitstream Vera Sans', 'Trebuchet MS', Verdana, 'Verdana Ref', sans-serif;
   color: var(--dark-gray);
   max-width: var(--max-width);
+}
+
+h2,
+h3 {
+  color: var(--basil-green);
+  margin: 8px 0;
+  font-size: 1.4rem;
+}
+
+h2 {
+  font-size: 2rem;
+  letter-spacing: -1px;
+}
+
+a {
+  color: var(--orange);
+  text-decoration: none;
+  transition: color 0.5s linear;
+}
+
+a:hover {
+  color: var(--red);
+}
+
+li > h4 {
+  margin-top: 12px;
+}
+
+header {
+  height: 120px;
+  background-color: var(--basil-green);
+  position: relative;
+}
+
+header h1 {
+  background: url(img/basil.png) no-repeat;
+  font-family: FuturaStdLight, sans-serif;
+  font-weight: normal;
+  color: #fff;
+  font-size: 5rem;
+  padding-left: 240px;
+  padding-top: 90px;
+  transform: translateX(-100px, -80px);
+}
+
+header a.beta {
+  background: url('img/burst.svg') no-repeat;
+  color: #fff;
+  font-size: 1.5rem;
+  position: absolute;
+  top: -20px;
+  right: 10px;
+  width: 85px;
+  height: 85px;
+  line-height: 85px;
+  text-align: center;
+  text-transform: uppercase;
+  transform: rotate(20deg);
+  transition: all 1s ease;
+}
+
+header a.beta:hover {
+  transform: rotate(0deg) scale(1.2);
 }
 
 nav {
@@ -82,79 +150,8 @@ nav a {
   background: linear-gradient(to bottom, #344e8b 1%, #6f89c7 100%);
 }
 
-header {
-  height: 120px;
-  background-color: var(--basil-green);
-  position: relative;
-}
-
-header h1 {
-  background: url(img/basil.png) no-repeat;
-  font-family: FuturaStdLight, sans-serif;
-  font-weight: normal;
-  color: #fff;
-  font-size: 5rem;
-  padding-left: 240px;
-  padding-top: 90px;
-  transform: translateX(-100px, -80px);
-}
-
-header a.beta {
-  background: url('img/burst.svg') no-repeat;
-  color: #fff;
-  font-size: 1.5rem;
-  position: absolute;
-  top: -20px;
-  right: 10px;
-  width: 85px;
-  height: 85px;
-  line-height: 85px;
-  text-align: center;
-  text-transform: uppercase;
-  transform: rotate(20deg);
-  transition: all 1s ease;
-}
-
-header a.beta:hover {
-  transform: rotate(0deg) scale(1.2);
-}
-
-h2,
-h3 {
-  color: var(--basil-green);
-  margin: 8px 0;
-  font-size: 1.4rem;
-}
-
-h2 {
-  font-size: 2rem;
-  letter-spacing: -1px;
-}
-
-a {
-  color: var(--orange);
-  text-decoration: none;
-  transition: color 0.5s linear;
-}
-
-a:hover {
-  color: var(--red);
-}
-
-li > h4 {
-  margin-top: 12px;
-}
-
-header h1 {
-  background: url(img/basil.png) no-repeat;
-  font-family: FuturaStdLight, sans-serif;
-  font-weight: normal;
-  color: #fff;
-  font-size: 5rem;
-}
-
 aside {
-  padding: 3 rem;
+  padding: 1rem;
 }
 
 aside li {
@@ -180,11 +177,6 @@ footer {
   padding: 1rem;
   border-radius: 0 0 4px 4px;
   margin-bottom: 2rem;
-}
-
-::selection {
-  background: var(--basil-green);
-  color: #fff;
 }
 
 @media (min-width: 600px) {

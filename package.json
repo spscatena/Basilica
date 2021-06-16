@@ -1,0 +1,25 @@
+{
+  "name": "Basilica",
+  "version": "1.0.0",
+  "description": "## Table of Contents",
+  "main": "index.js",
+  "scripts": {
+    "start": "browser-sync start --directory --server 'app' --files 'app' "
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/spscatena/Basilica.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/spscatena/Basilica/issues"
+  },
+  "homepage": "https://github.com/spscatena/Basilica#readme",
+  "devDependencies": {
+    "browser-sync": "^2.26.14",
+    "concurrently": "^6.2.0",
+    "sass": "^1.35.1"
+  }
+}

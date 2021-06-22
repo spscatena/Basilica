@@ -1,0 +1,28 @@
+html {
+  --basil-green: #88a308;
+  --dark-gray: #333333;
+  --light-gray: #e4e1d1;
+  --light-green: #f5faef;
+  --orange: #f90;
+  --light-orange: #ebbd4e;
+  --red: #f00;
+  --max-width: 840px;
+  /* --breakpoint: 640px; */
+}
+
+$break-five: 81.25em;
+// 1300px
+$break-four: 71.25em;
+// 1140
+$break-three: 61.25em;
+// 980
+$break-two: 46.25em;
+// 760
+$break-one: 22.5em;
+// 360
+
+$radius: 0.25rem;
+
+$fonts: 'Source Sans Pro', Helvetica, Clean, sans-serif;
+
+$red: #f00;
